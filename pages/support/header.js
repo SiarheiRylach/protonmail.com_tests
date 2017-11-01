@@ -11,7 +11,7 @@ class Header{
         this.googlePlus = element(by.css('a[title="Google Plus"]'));
         this.languagesList = element(by.css('#langs'));
 
-        // to do this.logo = element(by.css('#langs'));
+        this.logo = element(by.css('a[class="navbar-brand"]'));
         this.about = element(by.css('a[title="About"]'));
         this.security = element(by.css('a[title="Security"]'));
         this.blog = element(by.css('a[title="Blog"]'));

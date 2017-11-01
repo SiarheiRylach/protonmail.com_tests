@@ -3,15 +3,18 @@
  */
 
 const Header = require('./support/header');
+const Footer = require('./support/footer');
 
 class MainPage {
     constructor() {
         this.url = "https://protonmail.com/";
-        this.openPage = function () {
-            return browser.get(this.url);
-        };
         this.header = new Header();
+        this.footer = new Footer();
     };
+
+    openPage(){
+        return browser.get(this.url);
+    }
 
 }
 
